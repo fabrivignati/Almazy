@@ -418,3 +418,7 @@ a {
       "collarDos";
   }
 }
+
+.pagContacto {
+  display: flex;
+}
