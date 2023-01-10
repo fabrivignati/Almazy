@@ -1,0 +1,111 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  .contenedor {
+    grid-template-areas:
+      "header			header   	header"
+      "destacado		destacado 	destacado"
+      "contenido		contenido 	contenido"
+      "aside			aside 		aside"
+      "footer	 		footer 		footer";
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .articulo.destacado {
+    grid-template-columns: 1fr;
+  }
+
+  .articulo.destacado .contenedor-thumbnail {
+    height: 16em;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+.contenidoProductos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "aro1 aro2";
+  grid-area: contenido;
+}
+
+.contenidoProductos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "aroUno aroDos"
+    "pulseraUno pulseraDos"
+    "collarUno collarDos";
+  grid-area: contenidoProductos;
+}
+
+.collarUno {
+  margin: 30px 15px;
+  grid-area: collarUno;
+}
+
+.collarDos {
+  margin: 30px 15px;
+  grid-area: collarDos;
+}
+
+.pulseraUno {
+  margin: 30px 15px;
+  grid-area: pulseraUno;
+}
+
+.pulseraDos {
+  margin: 30px 15px;
+  grid-area: pulseraDos;
+}
+
+.aroUno {
+  margin: 30px 15px;
+  grid-area: aroUno;
+}
+
+.aroDos {
+  margin: 30px 15px;
+  grid-area: aroDos;
+}
+
+@media (max-width: 576px) {
+  .contenidoProductos {
+    grid-template-areas:
+      "aroUno"
+      "aroDos"
+      "pulseraUno"
+      "pulseraDos"
+      "collarUno"
+      "collarDos";
+  }
+}
+
+.pagContacto {
+  display: flex;
+}

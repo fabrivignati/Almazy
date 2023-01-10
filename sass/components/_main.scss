@@ -1,0 +1,32 @@
+/* index */
+
+.contenido {
+  grid-area: contenido;
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 1.25rem;
+}
+
+/* --------------pagina productos----------------- */ /* productos */
+.productosContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.cardProductos img {
+  width: 20em;
+  border-radius: 15px 15px 0px 0px;
+  padding: 0em 0em 2em 0em;
+}
+.cardProductos button {
+  border-radius: 15px;
+  width: 10em;
+  margin: 0em 0em 1.5em 0em;
+  padding: 0.5em;
+  background-color: white;
+}
+.cardProductos p {
+  padding: 0em 0em 2em 0em;
+}
+
+/*----------------- fin pagina productos ---------------*/
