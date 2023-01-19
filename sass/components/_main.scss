@@ -13,20 +13,23 @@
   flex-direction: row;
   margin: 20px;
 }
-.cardProductos img {
-  width: 20em;
-  border-radius: 15px 15px 0px 0px;
-  padding: 0em 0em 2em 0em;
-}
-.cardProductos button {
-  border-radius: 15px;
-  width: 10em;
-  margin: 0em 0em 1.5em 0em;
-  padding: 0.5em;
-  background-color: white;
-}
-.cardProductos p {
-  padding: 0em 0em 2em 0em;
+.cardProductos {
+  img {
+    width: 20em;
+    border-radius: 15px 15px 0px 0px;
+    padding: 0em 0em 2em 0em;
+  }
+
+  button {
+    border-radius: 15px;
+    width: 10em;
+    margin: 0em 0em 1.5em 0em;
+    padding: 0.5em;
+    background-color: white;
+  }
+  p {
+    padding: 0em 0em 2em 0em;
+  }
 }
 
 /*----------------- fin pagina productos ---------------*/

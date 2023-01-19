@@ -65,23 +65,25 @@ a {
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
 
-.header .logo {
-  margin-bottom: 1.25em;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 3px;
-}
+.header {
+  .logo {
+    margin-bottom: 1.25em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+  }
 
-.logo h1 {
-  font-size: 1.875em;
-}
+  .logo h1 {
+    font-size: 1.875em;
+  }
 
-.logo .iniciales-logo {
-  padding: 0.31em;
-  border: 2px solid #000;
-  display: inline-block;
-  font-size: 1em;
-  margin-bottom: 0.93em;
+  .iniciales-logo {
+    padding: 0.31em;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 0.93em;
+  }
 }
 
 .menu {
@@ -89,24 +91,23 @@ a {
   border-bottom: 1px solid #000;
   display: flex;
   justify-content: space-between;
-}
 
-.menu a {
-  padding: 0.625em;
-  color: #000;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  width: 100%;
-  text-align: center;
-  transition: 0.2s ease all;
-  font-size: 1em;
-}
-
-.menu a:hover {
-  background: #000;
-  color: #fff;
+  a {
+    padding: 0.625em;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    transition: 0.2s ease all;
+    font-size: 1em;
+  }
+  a:hover {
+    background: #000;
+    color: #fff;
+  }
 }
 
 /* ---------- Articulos ----------*/
@@ -114,37 +115,37 @@ a {
   display: flex;
   background: #fff;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-}
 
-.articulo .contenedor-texto {
-  padding: 1.25em;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
+  .contenedor-texto {
+    padding: 1.25em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-.articulo .contenedor-thumbnail {
-  width: 50%;
-}
+  .contenedor-thumbnail {
+    width: 50%;
+  }
 
-.articulo .titulo {
-  margin-bottom: 0.625rem;
-  font-size: 1.56em;
-}
+  .titulo {
+    margin-bottom: 0.625rem;
+    font-size: 1.56em;
+  }
 
-.articulo .titulo a {
-  font-weight: 400;
-  color: #000;
-}
+  .titulo a {
+    font-weight: 400;
+    color: #000;
+  }
 
-.articulo .extracto {
-  font-size: 1.25em;
-  line-height: 1.5625rem;
-  font-weight: 300;
-  margin-bottom: 1.25rem;
-  color: #868b8d;
+  .extracto {
+    font-size: 1.25em;
+    line-height: 1.5625rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    color: #868b8d;
+  }
 }
 
 /* ---------- Articulo Destacado ----------*/
@@ -156,17 +157,16 @@ a {
 
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-}
+  .contenedor-thumbnail {
+    min-height: 100%;
+    width: 100%;
+  }
 
-.articulo.destacado .contenedor-thumbnail {
-  min-height: 100%;
-  width: 100%;
-}
-
-.articulo.destacado .contenedor-thumbnail a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+  .contenedor-thumbnail a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .destacado .titulo a {
@@ -208,40 +208,37 @@ a {
   background: #000;
   color: #868b8d;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-}
+  .acerca-de img {
+    border-radius: 100%;
+    height: 10em;
+    width: 10em;
+    margin-bottom: 1.56em;
+  }
 
-.sidebar .acerca-de img {
-  border-radius: 100%;
-  height: 10em;
-  width: 10em;
-  margin-bottom: 1.56em;
-}
+  .bio {
+    margin-bottom: 1.56em;
+    font-size: 1.25em;
+    line-height: 1.56em;
+  }
 
-.sidebar .bio {
-  margin-bottom: 1.56em;
-  font-size: 1.25em;
-  line-height: 1.56em;
-}
+  .menu {
+    width: 100%;
+    display: inline-block;
+    background: #ccc;
+    a {
+      padding: 1.56rem;
+      color: #fff;
+      background-color: #000;
+      display: block;
+      font-size: 1em;
+      text-transform: uppercase;
+    }
 
-.sidebar .menu {
-  width: 100%;
-  display: inline-block;
-  background: #ccc;
+    a:hover {
+      background: #262626;
+    }
+  }
 }
-
-.sidebar .menu a {
-  padding: 1.56rem;
-  color: #fff;
-  background-color: #000;
-  display: block;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.sidebar .menu a:hover {
-  background: #262626;
-}
-
 /*---------- FOOTER ----------*/
 
 .contenedorProductos .footer {
