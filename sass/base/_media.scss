@@ -43,19 +43,8 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas: "aro1 aro2";
-  grid-area: contenido;
-}
-
-.contenidoProductos {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px 10px;
+  gap: 50px 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "aroUno aroDos"
