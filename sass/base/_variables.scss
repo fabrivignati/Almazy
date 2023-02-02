@@ -1,3 +1,33 @@
+/* listas */
+$colores: red, white, black, green;
+
+$font-size: 12px, 14px, 20px, 30px;
+
+/* mapas */
+
+$button: (
+  bg-boton: black,
+  color-text: white,
+  padding: 10px,
+  decoration: none,
+);
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* mixins */
+
+@mixin flex($flex, $justify, $align, $direction) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
 @mixin sizes($width, $height) {
   width: $width;
   height: $height;
